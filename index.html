@@ -47,6 +47,24 @@
     }
   
   </style>
+  <!-- Twitter widget -->
+  <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+  }(document, "script", "twitter-wjs"));</script>
+  <!-- End Twitter widget -->
 </head>
 <body>
   <article>
@@ -54,6 +72,7 @@
     <img src="images/doggles1.jpg" alt="A super cool doggo wearing a sweet pair of Doggles">
     <p>Doggles are a commercial brand of sunglasses for dogs. They are constructed out of a tinted polycarbonate material for UV protection, with elastic straps to secure them to the dog's head.</p>
     <p>While marketed as a fashion item, several practical and medical uses have been reported, and prescription lenses for dogs with impaired eyesight are available.</p>
+    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Doggles%20are%20so%20cool!">Tweet</a>
   </article>
 </body>
 </html>
